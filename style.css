@@ -60,12 +60,35 @@ img {
   }
   [class*="col-"] {
     margin-top: 30px;
-}
+  }
   #lezioni > .row {
     background-color: lightgoldenrodyellow;
   }
   #why > .row {
     background-color: lightgoldenrodyellow;
+  }
+  #why .row > [class*="col-"] {
+    margin-top: 30px;
+  }
+}
+/* bonus medium devices */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .row {
+    margin-top: 0px;
+    padding: 20px;
+    width: 100%;
+  }
+  [class*="col-"] {
+    margin-top: 30px;
+  }
+  #lezioni > .row {
+    background-color: lightgreen;
+  }
+  #steps > .row {
+    background-color: cornflowerblue;
+  }
+  #why > .row {
+    background-color: hotpink;
   }
   #why .row > [class*="col-"] {
     margin-top: 30px;
