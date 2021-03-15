@@ -27,9 +27,7 @@
   text-align: center;
 }
 
-#why .row>.first,
-#why .row>.second,
-#why .row>.third {
+#why .row > [class*="col-"] {
   margin-top: 80px;
 }
 
@@ -46,4 +44,30 @@
 
 img {
   height: 200px;
+}
+
+/* parti aggiunte pere l'esercizio */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media all and (max-width: 767px) {
+  .row {
+    margin-top: 0px;
+    padding: 20px;
+    width: 100%;
+  }
+  [class*="col-"] {
+    margin-top: 30px;
+}
+  #lezioni > .row {
+    background-color: lightgoldenrodyellow;
+  }
+  #why > .row {
+    background-color: lightgoldenrodyellow;
+  }
+  #why .row > [class*="col-"] {
+    margin-top: 30px;
+  }
 }
